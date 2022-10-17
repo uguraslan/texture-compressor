@@ -33,7 +33,7 @@ export const spawnProcess = (
       const child = spawn(toolPath, combinedFlags, {
         // @ts-ignore
         env: {
-          PATH: getBinaryDirectory() || process.env,
+          PATH: getBinaryDirectory() || process.env.toString(),
         },
       });
 
@@ -49,7 +49,7 @@ export const spawnProcess = (
         if (code !== 0) {
           reject(new Error(`Compression tool exited with error code ${code}`));
         } else {
-          resolve();
+          resolve(null);
         }
       });
     }
