@@ -53,7 +53,7 @@ export const ASTC_QUALITY_TYPES = [
 export const ETC = 'etc';
 export const IS_ETC = process.argv.includes(ETC);
 export const ETC_SUPPORTED_INPUT_TYPES = ['.jpeg', '.jpg', '.png', '.bmp'];
-export const ETC_SUPPORTED_OUTPUT_TYPES = ['.ktx'];
+export const ETC_SUPPORTED_OUTPUT_TYPES = ['.pvr', '.ktx'];
 export const ETC_COMPRESSION_TYPES = ['ETC1', 'ETC2_RGBA', 'ETC2_RGB'];
 export const ETC_QUALITY_TYPES = ['etcfast', 'etcslow', 'etcfastperceptual', 'etcslowperceptual'];
 
@@ -64,7 +64,7 @@ export const ETC_QUALITY_TYPES = ['etcfast', 'etcslow', 'etcfastperceptual', 'et
 export const PVRTC = 'pvrtc';
 export const IS_PVRTC = process.argv.includes(PVRTC);
 export const PVRTC_SUPPORTED_INPUT_TYPES = ['.jpeg', '.jpg', '.png', '.bmp'];
-export const PVRTC_SUPPORTED_OUTPUT_TYPES = ['.ktx'];
+export const PVRTC_SUPPORTED_OUTPUT_TYPES = ['.pvr', '.ktx'];
 export const PVRTC_COMPRESSION_TYPES = ['PVRTC1_2', 'PVRTC1_4', 'PVRTC1_2_RGB', 'PVRTC1_4_RGB'];
 export const PVRTC_QUALITY_TYPES = [
   'pvrtcfastest',
